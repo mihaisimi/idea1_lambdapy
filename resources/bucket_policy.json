@@ -1,0 +1,36 @@
+{
+  "Id": "LambdaPyIdea1BucketPolicy",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "LambdaPyIdea1BucketStatement",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "arn:aws:s3:::lambdapy-test/new/*"
+      ],
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::YOUR_LAMBDA_ROLE"
+        ]
+      }
+    },
+    {
+      "Sid": "DevIntentBucketStatementPut",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "arn:aws:s3:::lambdapy-test/processed*"
+      ],
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::YOUR_LAMBDA_ROLE"
+        ]
+      }
+    }
+  ]
+}
