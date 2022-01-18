@@ -1,5 +1,5 @@
 #This is a python code deployed as a lambda container, this is the support codebase for the 
-##For any information please contact us, you can find more details on our company's site: [Ideahub] ( https://www.ideahub.ro/#/home )
+##For any information please contact us, you can find more details on our company's site: [Ideahub](https://www.ideahub.ro/#/home)
 
 
 ##Overview
